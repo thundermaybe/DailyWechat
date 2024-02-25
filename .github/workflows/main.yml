@@ -1,11 +1,11 @@
 name: send card
 on:
   schedule:
-  - cron:  '10 2 * * *'
-  - cron:  '30 6 * * *'
-  - cron:  '30 8 * * *'
-  - cron:  '0 13 * * *'
-  - cron:  '5 12 * * *'
+  - cron:  '15 2,15 * * *'
+  # - cron:  '30 6 * * *'
+  # - cron:  '30 8 * * *'
+  # - cron:  '0 13 * * *'
+  # - cron:  '15 12 * * *'
   workflow_dispatch:
 
 jobs:
