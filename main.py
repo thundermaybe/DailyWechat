@@ -42,9 +42,9 @@ def get_birthday(birthday):
         nextdate = nextdate.replace(year=nextdate.year + 1)
     return (nextdate - today).days
 
-def get_loveday(loveday):
-    loveday = datetime.strptime(loveday, "%Y-%m-%d")
-    return (today-loveday).days
+# def get_loveday(loveday):
+#     loveday = datetime.strptime(loveday, "%Y-%m-%d")
+#     return (today-loveday).days
 
 if __name__ == '__main__':
     app_id = os.getenv("APP_ID")
@@ -86,7 +86,7 @@ if __name__ == '__main__':
         data['birthday_left'] = {'value': get_birthday(birthday)}
         data['wind'] = {'value': weather['wind_direction']}
         data['name'] = {'value': name}
-        data['love_day'] = {'value':get_loveday(loveday)}
+        # data['love_day'] = {'value':get_loveday(loveday)}
 
         res = wm.send_template(user_id, template_id, data)
         print(res)
