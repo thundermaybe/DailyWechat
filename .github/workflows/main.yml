@@ -1,7 +1,7 @@
 name: send card
 on:
   schedule:
-  - cron:  '17 2,12 * * *'
+  - cron:  '30 2,12 * * *'
   # - cron:  '30 6 * * *'
   # - cron:  '30 8 * * *'
   # - cron:  '0 13 * * *'
