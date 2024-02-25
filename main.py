@@ -86,7 +86,7 @@ if __name__ == '__main__':
         data['birthday_left'] = {'value': get_birthday(birthday)}
         data['wind'] = {'value': weather['wind_direction']}
         data['name'] = {'value': name}
-        data['lovedays'] = {'value':get_loveday(loveday)}
+        data['love_day'] = {'value':get_loveday(loveday)}
 
         res = wm.send_template(user_id, template_id, data)
         print(res)
